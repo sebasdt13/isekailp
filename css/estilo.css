@@ -1,0 +1,58 @@
+body {
+    font-family: 'Bona Nova SC';
+}
+
+#presentacion {
+    background: linear-gradient(to right, #ff5733, #c70039, #900c3f);
+    animation: fadeIn 2s ease-in-out;
+}
+
+.img-fluid {
+    animation: fadeInMove 2s ease-in-out;
+}
+
+#galeria img {
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    transition: transform 0.3s;
+}
+
+#galeria img:hover {
+    transform: scale(1.1);
+}
+
+#redes-sociales .btn {
+    margin: 0.5rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#redes-sociales .btn:hover {
+    background-color: #f8f9fa;
+    transform: scale(1.05);
+}
+
+footer {
+    background: #212529;
+    color: #fff;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #ff5733;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInMove {
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
